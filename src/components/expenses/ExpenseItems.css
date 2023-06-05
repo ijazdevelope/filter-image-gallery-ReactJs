@@ -1,0 +1,32 @@
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem;
+    background: #7a7575;
+    border-radius: 5px;
+    margin-bottom: 0.2rem;
+}
+.expense-paragraph {
+    display: flex;
+    align-items: center;
+}
+.date_container {
+    border: 1px solid;
+    padding: 0.3rem 0.8rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0.5rem;
+    background: #2a2929;
+}
+.expense-paragraph h4 {
+    margin-right: 0.2rem;
+}
+.expense-item button.price {
+    margin-right: 0.5rem;
+}
+.expense-item button.value {
+    margin-left: 0.5rem;
+}

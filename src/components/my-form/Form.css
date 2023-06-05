@@ -1,0 +1,38 @@
+.form__container {
+    margin-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.form__container .expense-form__desc {
+    flex-basis: 49%;
+}
+
+.form__container .expense-form__desc:nth-child(3) {
+    flex-basis: 99%;
+}
+
+.form__container label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #2a2929;
+    font-weight: 500;
+}
+
+.form__container input {
+    padding: 1rem;
+    outline: none;
+    width: 100%;
+}
+
+.form__container input[type='submit'] {
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    #root {
+        /* padding: 0 3rem; */
+    }
+}

@@ -1,0 +1,28 @@
+@import '../../scss/variables';
+
+.btn {
+    border: unset;
+    background-color: $secondary-clr;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-family: $cursive-font-family;
+    letter-spacing: 2px;
+    margin: 0.5rem 0;
+    padding: 0.8rem 1rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+
+    &-primary {
+        background-color: $primary-clr;
+        width: 100%;
+
+        &:hover {
+            border-radius: 0;
+            background-color: $secondary-clr;
+            font-weight: bold;
+        }
+    }
+}
+
+
