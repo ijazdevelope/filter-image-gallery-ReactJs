@@ -1,0 +1,125 @@
+$galler: gallery_container;
+
+.#{$galler} {
+
+    padding-bottom: 1rem;
+
+    &__wrapper {
+        padding-top: 0.5rem;
+    }
+
+    &__card-body {
+        padding: 0 1rem 0.3rem;
+    }
+
+    &__button {
+        padding: 0.5rem 1.3rem;
+        border-radius: 8px;
+        border: 1px solid;
+        outline: none;
+        cursor: pointer;
+
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+
+    &__card__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    &__card {
+        border: 1px solid;
+        border-radius: 8px;
+        overflow: hidden;
+        text-transform: capitalize;
+
+        .react-loading-skeleton {
+            background: #70545438;
+            display: inline-block;
+            width: 100%;
+        }
+    }
+
+    &__card__image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    &__ratings {
+
+        .fa {
+
+            &:not(:last-child) {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    &__price {
+        font-weight: bold;
+    }
+
+    &__badge {
+        padding: 3px 5px;
+        min-width: 2.0675rem;
+        height: 1.0625rem;
+        text-transform: uppercase;
+        color: #222;
+        font-size: .5625rem;
+        font-weight: 900;
+        font-family: Lato, sans-serif;
+        border-radius: 0.17813rem;
+        background: linear-gradient(90deg, #ffcf20, #ffa300);
+    }
+
+    &__member {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+    }
+
+    &__search {
+        min-width: 2.375rem;
+        min-height: 1.5rem;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 0.25rem 0;
+        border: 0.0625rem solid #979797;
+        color: #222 !important;
+        border-radius: 0.1875rem;
+        text-decoration: none;
+
+        &:not(:last-child) {
+            margin-right: 6px;
+        }
+    }
+}
+
+.filter {
+    text-transform: capitalize;
+}
+
+.fish,
+.rice,
+.salad,
+.bread,
+.all {
+    color: #fff;
+    background: rgb(0, 0, 0);
+    font-weight: bold;
+}
